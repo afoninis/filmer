@@ -248,7 +248,7 @@ function App() {
               )
             }
           >
-            ⮜
+            &#10094;
           </li>
           <li className="films-control">
             {currentPage + 1}/{pagesArr.length}
@@ -263,7 +263,7 @@ function App() {
               })
             }
           >
-            ⮞
+            &#10095;
           </li>
         </ul>
       </aside>
