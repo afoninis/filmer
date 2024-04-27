@@ -10,7 +10,6 @@
   min-height: 100vh;
   display: grid;
   grid-template-columns: max-content 1fr;
-  /* background-color: var(--color-black); */
   padding-top: 6vh;
 }
 .main {
@@ -195,6 +194,9 @@
   }
   .films-controls {
     margin-top: 2vh;
+  }
+  .films-control {
+    margin: 0 0.3vw;
   }
 }
 
