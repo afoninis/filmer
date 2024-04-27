@@ -1,0 +1,237 @@
+#root {
+  width: 100%;
+  background-color: var(--color-black);
+  display: grid;
+  justify-items: center;
+}
+.App {
+  max-width: 1920px;
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  /* background-color: var(--color-black); */
+  padding-top: 6vh;
+}
+.main {
+  width: 102.4rem;
+  padding-left: 3vw;
+}
+.main-title {
+  color: var(--color-white);
+}
+
+.video {
+  width: 100%;
+  height: 57.6rem;
+}
+
+.films {
+  padding: 2vh 2vw;
+  background-color: var(--color-black);
+}
+.films-list {
+  display: grid;
+  align-content: start;
+  justify-items: center;
+  position: relative;
+  grid-gap: 2vh;
+  height: 85%;
+}
+.films-controls {
+  font-size: 3rem;
+  color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.films-arrow {
+  font-size: 3rem;
+  user-select: none;
+  transition: all 0.3s ease-in-out;
+}
+.films-arrow:hover {
+  color: violet;
+}
+.films-arrow:active {
+  transform: scale(0.6);
+  color: violet;
+}
+.films-control {
+  display: flex;
+  align-items: center;
+  margin: 0 1vw;
+}
+.films-control.active {
+  color: violet;
+}
+
+.films-item {
+  /* height: 40%; */
+  display: grid;
+  align-items: center;
+  align-content: center;
+  position: relative;
+  width: 95%;
+  padding: 3vh 2vw;
+  height: 12.6vh;
+  border-radius: var(--border-radius);
+  background-color: var(--color-white);
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+.films-item:hover {
+  transform: scale(1.03);
+  background-color: rgb(255, 189, 255);
+}
+.films-item.active {
+  background-color: violet;
+  transform: scale(1.08);
+}
+.films-name {
+  font-size: 1.6rem;
+  margin-bottom: 0.25vh;
+  font-weight: 700;
+}
+.films-row {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.films-genre {
+  margin-right: 0.5rem;
+}
+.films-icon-container {
+  display: grid;
+  align-items: center;
+}
+.films-icon {
+  margin-left: 0.5rem;
+  height: 2vh;
+}
+
+.films-duration {
+}
+
+.films-year {
+  font-weight: 700;
+  position: absolute;
+  display: grid;
+  align-items: center;
+  /* height: 100%; */
+  top: 0;
+  right: -1px;
+  background-color: rgb(73, 11, 73);
+  padding: 1vh 1vw;
+  border-radius: 0 var(--border-radius) 0 var(--border-radius);
+  color: var(--color-white);
+}
+
+@media screen and (max-width: 1450px) {
+  html {
+    font-size: 56.25%;
+  }
+  .films-item {
+    height: 11vh;
+  }
+}
+@media screen and (max-width: 1300px) {
+  html {
+    font-size: 50%;
+  }
+  .films-item {
+    padding: 1vh 2vw;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .App {
+    grid-template-columns: 1fr;
+  }
+  .main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding-left: 0;
+  }
+  .video {
+    width: 102.4rem;
+  }
+  .films {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+  }
+  .films-list {
+    width: 60%;
+    grid-template-columns: 1fr 1fr;
+  }
+  .films-item {
+    height: 10vh;
+  }
+  .films-controls {
+    margin-top: 1vh;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .films-list {
+    width: 70%;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 900px) {
+  .video {
+    width: 100%;
+    height: auto;
+  }
+  .films {
+    padding: 0;
+    align-content: start;
+  }
+  .films-list {
+    width: 80%;
+    grid-template-columns: 1fr 1fr;
+  }
+  .films-controls {
+    margin-top: 2vh;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .films-list {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .films-list {
+    width: 96%;
+  }
+}
+@media screen and (max-width: 550px) {
+  /* html {
+    font-size: 56.25%;
+  } */
+  html {
+    font-size: 62.5%;
+  }
+  .films-list {
+    margin-top: 2vh;
+    width: 70%;
+    grid-template-columns: 1fr;
+  }
+  .films-item {
+    padding: 3vh 4vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .films-list {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .films-list {
+    width: 90%;
+  }
+}
