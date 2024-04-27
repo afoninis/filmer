@@ -171,6 +171,44 @@ function App() {
         "https://www.youtube.com/watch?v=ph-fbywCBqU&pp=ygU40JjRgdC60YPRgdGB0YLQstC-INGB0LDQvNC-0L7QsdC-0YDQvtC90Ysg0YLRgNC10LnQu9C10YA%3D"
       ),
     },
+
+    {
+      name: "Анализируй это",
+      year: 1999,
+      genre: "Comedy/Crime",
+      duration: "1h 43m",
+      youtubeID: getYouTubeID(
+        "https://www.youtube.com/watch?v=cnerwdN99TM&pp=ygUq0JDQvdCw0LvQuNC30LjRgNGD0Lkg0Y3RgtC-INGC0YDQtdC50LvQtdGA"
+      ),
+    },
+    {
+      name: "Могучие рейнджеры",
+      year: 2017,
+      genre: "Action/Sci-fi",
+      duration: "2h 4m",
+      youtubeID: getYouTubeID(
+        "https://www.youtube.com/watch?v=0p0ITsG9U6s&pp=ygUw0LzQvtCz0YPRh9C40LUg0YDQtdC50L3QtNC20LXRgNGLINGC0YDQtdC50LvQtdGA"
+      ),
+    },
+
+    {
+      name: "Малавита",
+      year: 2013,
+      genre: "Crime/Comedy",
+      duration: "1h 46m",
+      youtubeID: getYouTubeID(
+        "https://www.youtube.com/watch?v=ICpzz4S1p5U&pp=ygUf0JzQsNC70LDQstC40YLQsCDRgtGA0LXQudC70LXRgA%3D%3D"
+      ),
+    },
+    {
+      name: "Я, снова я и Ирэн",
+      year: 2000,
+      genre: "Comedy/Drama",
+      duration: "1h 56m",
+      youtubeID: getYouTubeID(
+        "https://www.youtube.com/watch?v=w3pV-yAKMOY&pp=ygUr0Y8g0YHQvdC-0LLQsCDRjyDQuCDQuNGA0Y3QvSDRgtGA0LXQudC70LXRgA%3D%3D"
+      ),
+    },
   ]);
 
   const getFilmsList = () => {
